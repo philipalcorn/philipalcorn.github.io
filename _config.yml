@@ -190,8 +190,6 @@ exclude:
   - README
   - tmp
   # CV-ONLY MODE: delete the lines below to bring these pages back
-  # (and remove `- /` from redirect_from in _pages/cv.md).
-  - _pages/about.md
   - _pages/portfolio.html
   - _pages/publications.html
   - _pages/talks.html
