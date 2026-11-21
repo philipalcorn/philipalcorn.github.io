@@ -226,8 +226,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
+    output: false   # no individual pages; titles link to the DOI (paperurl) instead
   portfolio:
     output: true
     permalink: /:collection/:path/

@@ -2,7 +2,6 @@
 title: "Investigating atrial fibrillation mechanisms using an interactive N-body digital twin of the left atrium"
 collection: publications
 category: conferences
-permalink: /publication/2026-04-02-heart-rhythm-af-mechanisms
 date: 2026-04-02
 venue: 'Heart Rhythm 2026 (poster PO-FPI-340)'
 paperurl: 'https://doi.org/10.1016/j.hrthm.2026.03.392'

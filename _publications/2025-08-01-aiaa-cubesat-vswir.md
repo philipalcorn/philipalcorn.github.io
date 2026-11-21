@@ -2,7 +2,6 @@
 title: "CubeSat with VSWIR imager for detection and tracking of hypersonic vehicles"
 collection: publications
 category: conferences
-permalink: /publication/2025-08-01-aiaa-cubesat-vswir
 date: 2025-08-01
 venue: 'AIAA Regional Student Conference (Team Category)'
 paperurl: 'https://doi.org/10.2514/6.2025-97548'

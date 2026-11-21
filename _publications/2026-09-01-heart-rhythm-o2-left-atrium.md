@@ -2,7 +2,6 @@
 title: "Near-real-time interactive N-body model of the left atrium for exploratory arrhythmia induction and ablation simulation"
 collection: publications
 category: manuscripts
-permalink: /publication/2026-09-01-heart-rhythm-o2-left-atrium
 date: 2026-09-01
 venue: 'Heart Rhythm O2'
 paperurl: 'https://doi.org/10.1016/j.hroo.2026.05.020'

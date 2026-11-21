@@ -2,7 +2,6 @@
 title: "TriChimes: A GPU-Accelerated ML Interatomic Potential with Triton Kernels"
 collection: publications
 category: posters
-permalink: /publication/2026-07-01-mid-sure-trichimes
 venue: "MSU Mid-SURE"
 date: 2026-07-01
 location: "East Lansing, MI"
