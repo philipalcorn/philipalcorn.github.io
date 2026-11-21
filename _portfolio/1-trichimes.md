@@ -16,6 +16,4 @@ ChIMES is a many-body machine-learned interatomic potential whose reference impl
 - Hand-wrote backward-pass kernels to remove autograd overhead in training
 - Built a GPU-vs.-CPU benchmarking suite and pybind11 bindings to the ChIMES C++ library
 
-The main lesson: performance gains come not only from faster arithmetic but from properly using the GPU's execution model.
-
 Awarded **Second-Best Research Presentation** in the REU cohort.
