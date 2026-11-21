@@ -24,3 +24,6 @@ package-lock.json
 
 # Ignore the main.min.js since it should be built as part of jekyll-build.yml
 assets/js/main.min.js
+
+# CV PDF is fetched from the private resume repo at build time (see .github/workflows/jekyll.yml)
+files/alcorn_phil_cv.pdf

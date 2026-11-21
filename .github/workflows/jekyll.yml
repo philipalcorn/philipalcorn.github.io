@@ -1,5 +1,5 @@
 # Workflow for building and deploying an Academic Pages / Jekyll site to GitHub Pages
-name: Deploy Academic Pages template site to Pages
+name: Deploy site to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -8,6 +8,14 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+
+  # Rebuild daily so the CV picks up changes from the private resume repo
+  schedule:
+    - cron: "0 9 * * *"
+
+  # Lets the resume repo trigger an immediate rebuild (optional, see README)
+  repository_dispatch:
+    types: [resume-updated]
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -28,6 +36,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.1
+      - name: Checkout private resume repo
+        uses: actions/checkout@v7.0.1
+        with:
+          repository: philipalcorn/Resume
+          token: ${{ secrets.RESUME_REPO_TOKEN }}
+          path: _resume
+          sparse-checkout: alcorn_phil_cv.pdf
+          sparse-checkout-cone-mode: false
+      - name: Copy CV into site
+        run: |
+          cp _resume/alcorn_phil_cv.pdf files/alcorn_phil_cv.pdf
+          rm -rf _resume
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
