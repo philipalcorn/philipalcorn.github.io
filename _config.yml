@@ -23,7 +23,7 @@ repository               : "philipalcorn/philipalcorn.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  # avatar           : "profile.png"   # uncomment once you have a real photo in images/
   name             : "Phil Alcorn"
   pronouns         : # example: "she/her"  
   bio              : "Senior Elecrical Engineering Student"
@@ -189,16 +189,6 @@ exclude:
   - Rakefile
   - README
   - tmp
-  # CV-ONLY MODE: delete the lines below to bring these pages back
-  - _pages/portfolio.html
-  - _pages/publications.html
-  - _pages/talks.html
-  - _pages/teaching.html
-  - _pages/year-archive.html
-  - _pages/collection-archive.html
-  - _pages/page-archive.html
-  - _pages/category-archive.html
-  - _pages/tag-archive.html
   - vendor
 keep_files:
   - .git
@@ -229,19 +219,18 @@ kramdown:
 
 
 # These settings control the types of collections used by the template
-# CV-ONLY MODE: set `output: true` on each collection below to publish it again.
 collections:
   teaching:
-    output: false
+    output: true
     permalink: /:collection/:path/
   publications:
-    output: false
+    output: true
     permalink: /:collection/:path/
   portfolio:
-    output: false
+    output: true
     permalink: /:collection/:path/
   talks:
-    output: false
+    output: true
     permalink: /:collection/:path/
 
 
