@@ -5,6 +5,7 @@ permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+  - /   # CV-ONLY MODE: homepage redirects to CV; remove this line to restore About
 ---
 
 {% include base_path %}

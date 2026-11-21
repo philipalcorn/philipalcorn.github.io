@@ -189,6 +189,18 @@ exclude:
   - Rakefile
   - README
   - tmp
+  # CV-ONLY MODE: delete the lines below to bring these pages back
+  # (and remove `- /` from redirect_from in _pages/cv.md).
+  - _pages/about.md
+  - _pages/portfolio.html
+  - _pages/publications.html
+  - _pages/talks.html
+  - _pages/teaching.html
+  - _pages/year-archive.html
+  - _pages/collection-archive.html
+  - _pages/page-archive.html
+  - _pages/category-archive.html
+  - _pages/tag-archive.html
   - vendor
 keep_files:
   - .git
@@ -219,18 +231,19 @@ kramdown:
 
 
 # These settings control the types of collections used by the template
+# CV-ONLY MODE: set `output: true` on each collection below to publish it again.
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
