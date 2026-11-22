@@ -7,8 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm an electrical engineering student at [Tarleton State University]
-(https://www.tarleton.edu/) (B.S. expected May 2027, 4.0 GPA). 
+I'm an electrical engineering student at [Tarleton State University](https://www.tarleton.edu/) (B.S. expected May 2027, 4.0 GPA). 
 My research interests broadly lie in the field of **computer architecture**.
 Generally speaking, I am interested in a hardware/software co-design approach
 to improving the performance of computational workloads, such as AI/ML
